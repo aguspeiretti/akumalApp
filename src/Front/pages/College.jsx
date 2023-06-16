@@ -5,7 +5,6 @@ import Cniños from "../img/ninos.png";
 import Cins from "../img/ins.png";
 import Cvida from "../img/vida.png";
 import Cbehappy from "../img/behappy.png";
-import NavBar from "../components/NavBar";
 
 const College = () => {
   return (

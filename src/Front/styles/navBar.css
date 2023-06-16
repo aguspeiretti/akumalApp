@@ -1,0 +1,125 @@
+.navBar {
+  width: 100vw;
+  height: 100px;
+  background-color: rgb(46, 46, 46);
+}
+.navBarContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.navBarContainer ul {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  align-items: center;
+}
+.social {
+  height: 60%;
+  position: absolute;
+  right: 20px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+.navBarContainer ul li {
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+  font-size: 25px;
+  list-style: none;
+}
+.navBarContainer ul img {
+  height: 90%;
+  padding: 10px;
+  margin-left: 10px;
+}
+.navBarContainerResponsive {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.navBarContainerResponsive ul {
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.navBarContainerResponsive ul img {
+  height: 90%;
+  padding: 10px;
+  margin-left: 10px;
+}
+.toggleContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.toggleContainer svg {
+  height: 30%;
+  padding: 10px;
+  margin-left: 10px;
+}
+.menuContainer {
+  position: absolute;
+  width: 80vw;
+  height: 700px;
+  top: 110px;
+  right: 0;
+  border-radius: 15px;
+  background-color: rgb(230, 132, 52);
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+}
+
+.menuContainerClose {
+  position: absolute;
+  width: 80vw;
+  height: 600px;
+  top: -1500px;
+  right: 0;
+  border-radius: 15px;
+  background-color: rgb(230, 132, 52);
+}
+.menuContainer ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+}
+.menuContainer ul li {
+  list-style: none;
+  font-family: sans-serif;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.profileImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.log {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+}
+.log p {
+  padding: 0px 40px;
+}
+@media (max-width: 700px) {
+  .navBarContainer {
+    display: none;
+  }
+  .navBarContainerResponsive {
+    display: block;
+  }
+}
